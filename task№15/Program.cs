@@ -4,41 +4,15 @@
 // 1->нет;
 // 6->да;
 
+Console.WriteLine("введите день недели  от 1 до 7: ");
+int num = int.Parse(Console.ReadLine());
 
-Console.WriteLine("введите день недели oт 1 до 7: ");
-int number = int.Parse(Console.ReadLine());
-if (number == 1)
+if (num==6 || num==7)
 {
-    Console.Write("это будний день :'-C");
+   Console.Write("выходной :-D");
 }
-if (number == 2)
+else 
 {
-    Console.Write("это будний день :'-C");
+    Console.Write("будний день :-С ");
 }
-if (number ==3)
-{
-    Console.Write("это будний день :'-C");
-}
-if (number ==4)
-{
-    Console.Write("это будний день :'-C");
-}
-if (number ==5)
-{
-    Console.Write("это будний день :'-C");
-}
-if (number ==6)
-{
-    Console.Write("ураа!!!выходной ;-D");
-}
-if (number ==7)
-{
-    Console.Write("ураа!!!выходной ;-D");
-}
-if (number > 7)
-{
-    Console.Write("в неделе только 7 дней! введите верное число!");
-}
-
- 
 

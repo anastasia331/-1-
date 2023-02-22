@@ -12,7 +12,7 @@ int m = Convert.ToInt32(Console.ReadLine());
 
 int[,] numbers = new int[n, m];
 FillArrayRandomNumbers(numbers);
-
+PrintArray(numbers);
 
 for (int j = 0; j < numbers.GetLength(1); j++)
 {
@@ -25,7 +25,7 @@ for (int j = 0; j < numbers.GetLength(1); j++)
     Console.Write(av + "; ");
 }
 Console.WriteLine("- Среднеарифметическое строк");
-PrintArray(numbers);
+
 
 
 

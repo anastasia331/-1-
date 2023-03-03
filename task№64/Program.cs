@@ -2,26 +2,24 @@
 
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
+Console.WriteLine("Введите натуральное число больше 1:");
+int N = int.Parse(Console.ReadLine());
 
-int n = InputInt("Введите натуральное число число ");
-int m = 1;
-if (n < 1)
+///Метод вывода натуральных чисел от N до 1:
+void NumberCounter (int N)
 {
-    Console.WriteLine("Ввели не натуральное  число");
-}
-Console.WriteLine(NaturalNumber(n, m));
 
-int NaturalNumber(int n, int m)
-{
-    if (n == m)
-        return n;
-    else
-        Console.Write($" {NaturalNumber (n, m+1 )}, ");
-    return m;
+if (N < 0)
+ {
+    Console.Write($"{N} не натуральное число");
+ }
+    if (N == 0) return;
+    
+   Console.Write($"{N}, ");
+    
+    NumberCounter (N - 1);
+    
 }
 
-int InputInt(string output)
-{
-    Console.Write(output);
-    return int.Parse(Console.ReadLine());
-}
+
+NumberCounter(N);
